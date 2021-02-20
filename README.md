@@ -1,10 +1,11 @@
 # DSKY-Project
 My open source journey to building a functional DSKY that can be used in simulator. 
  
-## Hardware
+## v1 Hardware
  - Raspberry Pi 3B+
  - Nextion 4.3" LCD HMI (NX4827T043_11) display
- - Alarm Panel & Keyboard PCBs designed by Riley Rainey
+ - Alarm Panel PCB designed by Riley Rainey
+ - CherryMX Blue switches for keyboard
  - 3D Printed shell components made from models created by Riley Rainey from original MIT drawings
  
 ## Software
