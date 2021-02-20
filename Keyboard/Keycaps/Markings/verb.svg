@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="20.004mm"
+   height="20.004mm"
+   viewBox="0 0 20.004 20.004"
+   version="1.1"
+   id="svg8">
+  <defs
+     id="defs2">
+    <rect
+       x="2.7875744"
+       y="4.7719494"
+       width="8.8824401"
+       height="3.5907738"
+       id="rect18" />
+    <rect
+       x="6.000372"
+       y="7.6540179"
+       width="8.1264881"
+       height="3.2600446"
+       id="rect12" />
+  </defs>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1">
+    <text
+       xml:space="preserve"
+       id="text10"
+       style="font-size:3.175px;line-height:1.25;font-family:Gorton;-inkscape-font-specification:Gorton;text-align:center;white-space:pre;shape-inside:url(#rect12)"><tspan
+         style="visibility:hidden"
+         x="6"
+         y="13.850937"><tspan
+           dx="0 2.2669461 2.0923202 2.111372">VERB</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text16"
+       style="font-size:3.175px;line-height:1.25;font-family:Gorton;-inkscape-font-specification:Gorton;text-align:center;white-space:pre;shape-inside:url(#rect18)"
+       transform="translate(2.8820685,2.7875744)"><tspan
+         x="2.9470365"
+         y="7.7083593"><tspan>VERB</tspan></tspan></text>
+  </g>
+</svg>
