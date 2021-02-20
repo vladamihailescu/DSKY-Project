@@ -2,7 +2,7 @@
 My open source journey to building a functional DSKY that can be used in simulator. 
  
 ## Hardware
- - Raspberry Pi 3+
+ - Raspberry Pi 3B+
  - Nextion 4.3" LCD HMI (NX4827T043_11) display
  - Alarm Panel & Keyboard PCBs designed by Riley Rainey
  - 3D Printed shell components made from models created by Riley Rainey from original MIT drawings
@@ -17,9 +17,9 @@ Raspberry Pi running VirtualAGC is driving the Nextion HMI, sending lamp instruc
 
 ## Task List
 - [x] Build working GUI for HMI display
-- [x] Code for RPi driving the display
+- [x] Driver for Nextion HMI display
 - [x] Assemble alert module PCB
-- [x] Code for alert module
+- [x] Driver for alert module
 - [ ] Assemble keyboard (In Progress)
 - [ ] Code for Keyboard (In progress)
 - [ ] Update piDSKY2.py file (In Progress)
