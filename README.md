@@ -27,7 +27,7 @@ Raspberry Pi running VirtualAGC is driving the Nextion HMI, sending lamp instruc
 - [ ] Fix any major bugs in code
 - [ ] Refine GUI to more closely match real DSKY display
 - [ ] Assemble DSKY
-- [ ] Test with simulator
+- [ ] Test with VirtualAGC + NASSP
 
 ## References
  [VirtualAGC Project](https://www.ibiblio.org/apollo/) - I am so thankful that this exists because it has been my dream to build my own DSKY ever since I first learned of the
