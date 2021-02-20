@@ -18,8 +18,11 @@ Raspberry Pi running VirtualAGC is driving the Nextion HMI, sending lamp instruc
 ## Task List
 - [x] Build working GUI for HMI display
 - [x] Code for RPi driving the display
-- [ ] Code for Alert board
-- [ ] Code for Keyboard
+- [x] Assemble alert module PCB
+- [x] Code for alert module
+- [ ] Assemble keyboard (In Progress)
+- [ ] Code for Keyboard (In progress)
+- [ ] Update piDSKY2.py file (In Progress)
 - [ ] Fix any major bugs in code
 - [ ] Refine GUI to more closely match real DSKY display
 - [ ] Assemble DSKY
