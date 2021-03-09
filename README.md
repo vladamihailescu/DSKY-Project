@@ -5,7 +5,7 @@ My open source journey to building a functional DSKY that can be used in simulat
  - Raspberry Pi 3B+ running VirtualAGC + driving the display & keyboard
  - Nextion 4.3" LCD HMI (NX4827T043_11) display
  - Alarm Panel PCB designed by Riley Rainey
- - Hand assembled keyboard using Cherry MX blue key switches
+ - Hand assembled keyboard using Cherry MX blue key switches & Arduino UNO in USB HID mode
  - 3D Printed shell components made from models created/modified by Riley Rainey/Manoel DaSilva from original MIT drawings or myself
 
 ## v1.5 Hardware (Planned)
