@@ -23,7 +23,9 @@
 #		a Raspberry Pi using a specific hardware model, and
 #		is not really applicable for any other purpose.
 # Reference:	http://www.ibiblio.org/apollo/developer.html
-# Mod history:	2017-11-19 RSB	Began adapting from piDSKY.py.
+# Mod history:	2021-02-17 Added functionality for driving a  
+#				Nextion 4.3" display and custom alarm panel board.
+#       2017-11-19 RSB	Began adapting from piDSKY.py.
 #		2017-11-20 RSB	Added command-line arguments of various
 #				kinds and fixed the keyboard binding
 #				in the tkinter window.  Systematized
@@ -212,7 +214,7 @@ import serial
 #####################################################################################################################################################
 
 # Setup the serial communication (Vlad Mihailescu)
-ser_alarm=serial.Serial('/dev/ttySC0', baudrate=115200, timeout=1) # Alarm Panel
+ser_alarm=serial.Serial('/dev/ttySC0', baudrate=9600, timeout=1) # Alarm Panel
 ser_disp=serial.Serial('/dev/ttySC1', baudrate=9600, parity=serial.PARITY_NONE, stopbits=serial.STOPBITS_ONE, bytesize=serial.EIGHTBITS, timeout=1) # Display
 
 eof = b'\xff\xff\xff'
