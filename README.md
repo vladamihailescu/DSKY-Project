@@ -1,5 +1,5 @@
 # DSKY-Project
-My open source journey to building a functional DSKY that can be used in simulator. 
+My open source journey to building a functional, historically-accurate DSKY interface that can be used in simulation. 
  
 ## v1.0 Hardware (Current)
  - Raspberry Pi 3B+ running VirtualAGC + driving the display & keyboard
