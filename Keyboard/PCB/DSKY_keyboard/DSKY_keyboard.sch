@@ -1,0 +1,1244 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "DSKY Keyboard (Cherry MX)"
+Date ""
+Rev "1.0"
+Comp ""
+Comment1 ""
+Comment2 "creativecommons.org/licenses/by/4.0/"
+Comment3 "License: CC BY 4.0"
+Comment4 "Author: Vlad Mihailescu"
+$EndDescr
+$Comp
+L Connector:Conn_01x04_Male J1
+U 1 1 60506F08
+P 9250 3750
+F 0 "J1" H 9358 4031 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 9358 3940 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 9250 3750 50  0001 C CNN
+F 3 "~" H 9250 3750 50  0001 C CNN
+	1    9250 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR07
+U 1 1 6079F417
+P 10050 3450
+F 0 "#PWR07" H 10050 3300 50  0001 C CNN
+F 1 "VBUS" H 10065 3623 50  0000 C CNN
+F 2 "" H 10050 3450 50  0001 C CNN
+F 3 "" H 10050 3450 50  0001 C CNN
+	1    10050 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 607A0871
+P 10050 4050
+F 0 "#PWR09" H 10050 3800 50  0001 C CNN
+F 1 "GND" H 10055 3877 50  0000 C CNN
+F 2 "" H 10050 4050 50  0001 C CNN
+F 3 "" H 10050 4050 50  0001 C CNN
+	1    10050 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 3750 10050 4050
+Wire Wire Line
+	10050 3650 10050 3450
+Text GLabel 9750 3950 2    50   Input ~ 0
+PA13
+Text GLabel 9750 3850 2    50   Input ~ 0
+PA14
+Text Label 9500 3950 0    50   ~ 0
+SWD
+Wire Wire Line
+	9450 3650 10050 3650
+Wire Wire Line
+	9450 3750 10050 3750
+Wire Wire Line
+	9450 3850 9750 3850
+Wire Wire Line
+	9450 3950 9750 3950
+Text Label 9500 3850 0    50   ~ 0
+SWC
+Wire Wire Line
+	5650 4800 5650 4950
+Wire Wire Line
+	5650 4950 6250 4950
+Wire Wire Line
+	6250 4950 6250 4800
+$Comp
+L power:GND #PWR011
+U 1 1 60ACA7C0
+P 5650 4950
+F 0 "#PWR011" H 5650 4700 50  0001 C CNN
+F 1 "GND" H 5655 4777 50  0000 C CNN
+F 2 "" H 5650 4950 50  0001 C CNN
+F 3 "" H 5650 4950 50  0001 C CNN
+	1    5650 4950
+	1    0    0    -1  
+$EndComp
+Connection ~ 5650 4950
+$Comp
+L Trinket_M0_rev_D-eagle-import:RESISTOR_0603_NOOUT R2
+U 1 1 60ACB186
+P 5100 6200
+F 0 "R2" H 5046 6108 50  0000 L CNN
+F 1 "1.1K" H 5098 6200 40  0000 C CNB
+F 2 "Trinket M0 rev D:0603-NO" H 5100 6200 50  0001 C CNN
+F 3 "" H 5100 6200 50  0001 C CNN
+	1    5100 6200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4200 6200 4900 6200
+Text Label 4300 6600 0    50   ~ 0
+SWC
+Text Label 4300 6500 0    50   ~ 0
+SWD
+Wire Wire Line
+	4200 6600 4600 6600
+Wire Wire Line
+	4200 6500 4600 6500
+Text GLabel 4600 6600 2    50   Input ~ 0
+PA14
+Text GLabel 4600 6500 2    50   Input ~ 0
+PA13
+Text GLabel 4600 6100 2    50   Input ~ 0
+PA09
+Connection ~ 4350 4900
+Wire Wire Line
+	4350 5000 4200 5000
+Wire Wire Line
+	4350 4900 4350 5000
+Wire Wire Line
+	4200 6900 4200 7000
+Wire Wire Line
+	1850 5200 2400 5200
+Text Label 2050 5200 0    50   ~ 0
+~RESET
+Connection ~ 4350 4800
+Wire Wire Line
+	4350 4900 4350 4800
+Wire Wire Line
+	4200 4900 4350 4900
+Wire Wire Line
+	4350 4550 4350 4800
+Wire Wire Line
+	4200 4800 4350 4800
+Text GLabel 4600 6000 2    50   Input ~ 0
+PA08
+Wire Wire Line
+	4200 6000 4600 6000
+$Comp
+L STM32F042K6T6:STM32F042K6T6 U1
+U 1 1 606F35FF
+P 3300 5800
+F 0 "U1" H 3301 7092 60  0000 C CNN
+F 1 "STM32F042K6T6" H 3301 6986 60  0000 C CNN
+F 2 "STM32F042K6T6:STM32F042K6T6" H 4200 6040 60  0001 C CNN
+F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/52/ad/d0/80/e6/be/40/ad/DM00105814.pdf/files/DM00105814.pdf/jcr:content/translations/en.DM00105814.pdf" H 4600 6081 60  0001 C CNN
+	1    3300 5800
+	1    0    0    -1  
+$EndComp
+Connection ~ 1450 5300
+Wire Wire Line
+	1450 5200 1450 5300
+Connection ~ 1850 5200
+$Comp
+L power:+3.3V #PWR010
+U 1 1 6069CECD
+P 4350 4550
+F 0 "#PWR010" H 4350 4400 50  0001 C CNN
+F 1 "+3.3V" H 4365 4723 50  0000 C CNN
+F 2 "" H 4350 4550 50  0001 C CNN
+F 3 "" H 4350 4550 50  0001 C CNN
+	1    4350 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 5300 1450 5600
+Wire Wire Line
+	1850 5200 1850 5300
+$Comp
+L power:GND #PWR012
+U 1 1 606602E4
+P 1450 5600
+F 0 "#PWR012" H 1450 5350 50  0001 C CNN
+F 1 "GND" H 1455 5427 50  0000 C CNN
+F 2 "" H 1450 5600 50  0001 C CNN
+F 3 "" H 1450 5600 50  0001 C CNN
+	1    1450 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Trinket_M0_rev_D-eagle-import:SWITCH_TACT_SMT4.6X2.8 SW20
+U 1 1 6065DEF5
+P 1650 5200
+F 0 "SW20" H 1650 5522 42  0000 C CNN
+F 1 "SWITCH_TACT_SMT4.6X2.8" H 1650 5443 42  0000 C CNN
+F 2 "Trinket M0 rev D:BTN_KMR2_4.6X2.8" H 1650 5200 50  0001 C CNN
+F 3 "" H 1650 5200 50  0001 C CNN
+	1    1650 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Trinket_M0_rev_D-eagle-import:CAP_CERAMIC0805-NOOUTLINE C3
+U 1 1 6059F4D1
+P 4200 7200
+F 0 "C3" H 4278 7296 50  0000 L CNN
+F 1 "1uF" H 4278 7205 50  0000 L CNN
+F 2 "Trinket M0 rev D:0603-NO" H 4200 7200 50  0001 C CNN
+F 3 "" H 4200 7200 50  0001 C CNN
+	1    4200 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 7300 4200 7400
+Connection ~ 4200 7300
+Wire Wire Line
+	4200 7200 4200 7300
+$Comp
+L power:GND #PWR013
+U 1 1 605669B0
+P 4200 7400
+F 0 "#PWR013" H 4200 7150 50  0001 C CNN
+F 1 "GND" H 4205 7227 50  0000 C CNN
+F 2 "" H 4200 7400 50  0001 C CNN
+F 3 "" H 4200 7400 50  0001 C CNN
+	1    4200 7400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 6100 4600 6100
+Wire Wire Line
+	4200 5900 4600 5900
+Wire Wire Line
+	4200 5800 4600 5800
+Wire Wire Line
+	4200 5700 4600 5700
+Wire Wire Line
+	4200 5600 4600 5600
+Wire Wire Line
+	4200 5500 4600 5500
+Wire Wire Line
+	4200 5400 4600 5400
+Wire Wire Line
+	4200 5300 4600 5300
+Wire Wire Line
+	4200 5200 4600 5200
+Text GLabel 4600 5900 2    50   Input ~ 0
+PA07
+Text GLabel 4600 5800 2    50   Input ~ 0
+PA06
+Text GLabel 4600 5700 2    50   Input ~ 0
+PA05
+Text GLabel 4600 5600 2    50   Input ~ 0
+PA04
+Text GLabel 4600 5500 2    50   Input ~ 0
+PA03
+Text GLabel 4600 5400 2    50   Input ~ 0
+PA02
+Text GLabel 4600 5300 2    50   Input ~ 0
+PA01
+Text GLabel 4600 5200 2    50   Input ~ 0
+PA00
+$Comp
+L power:VBUS #PWR01
+U 1 1 6054E2A9
+P 8700 1150
+F 0 "#PWR01" H 8700 1000 50  0001 C CNN
+F 1 "VBUS" H 8715 1323 50  0000 C CNN
+F 2 "" H 8700 1150 50  0001 C CNN
+F 3 "" H 8700 1150 50  0001 C CNN
+	1    8700 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR02
+U 1 1 6055FBE9
+P 9800 1150
+F 0 "#PWR02" H 9800 1000 50  0001 C CNN
+F 1 "+3.3V" H 9815 1323 50  0000 C CNN
+F 2 "" H 9800 1150 50  0001 C CNN
+F 3 "" H 9800 1150 50  0001 C CNN
+	1    9800 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 2350 10000 2450
+$Comp
+L power:GND #PWR05
+U 1 1 6076E192
+P 10000 2450
+F 0 "#PWR05" H 10000 2200 50  0001 C CNN
+F 1 "GND" H 10005 2277 50  0000 C CNN
+F 2 "" H 10000 2450 50  0001 C CNN
+F 3 "" H 10000 2450 50  0001 C CNN
+	1    10000 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Trinket_M0_rev_D-eagle-import:CAP_CERAMIC0805-NOOUTLINE C2
+U 1 1 6076CFDF
+P 10000 2250
+F 0 "C2" H 10078 2346 50  0000 L CNN
+F 1 "10uF" H 10078 2255 50  0000 L CNN
+F 2 "Trinket M0 rev D:0805-NO" H 10000 2250 50  0001 C CNN
+F 3 "" H 10000 2250 50  0001 C CNN
+	1    10000 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10650 2350 10650 2450
+$Comp
+L power:GND #PWR06
+U 1 1 605C6312
+P 10650 2450
+F 0 "#PWR06" H 10650 2200 50  0001 C CNN
+F 1 "GND" H 10655 2277 50  0000 C CNN
+F 2 "" H 10650 2450 50  0001 C CNN
+F 3 "" H 10650 2450 50  0001 C CNN
+	1    10650 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 1500 9800 1150
+Connection ~ 9800 1500
+Wire Wire Line
+	10650 1500 9800 1500
+Wire Wire Line
+	10650 1900 10650 2050
+$Comp
+L Trinket_M0_rev_D-eagle-import:RESISTOR_0603_NOOUT R1
+U 1 1 605ABFB2
+P 10650 1700
+F 0 "R1" V 10612 1778 50  0000 L CNN
+F 1 "1.5K" H 10648 1700 40  0000 C CNB
+F 2 "Trinket M0 rev D:0603-NO" H 10650 1700 50  0001 C CNN
+F 3 "" H 10650 1700 50  0001 C CNN
+	1    10650 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D21
+U 1 1 6059332E
+P 10650 2200
+F 0 "D21" V 10689 2082 50  0000 R CNN
+F 1 "LED" V 10598 2082 50  0000 R CNN
+F 2 "Trinket M0 rev D:CHIPLED_0603_NOOUTLINE" H 10650 2200 50  0001 C CNN
+F 3 "~" H 10650 2200 50  0001 C CNN
+	1    10650 2200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9800 1900 10000 1900
+Connection ~ 9800 1900
+Wire Wire Line
+	10000 2050 10000 1900
+Wire Wire Line
+	9800 1900 9800 1500
+Wire Wire Line
+	9600 1900 9800 1900
+Wire Wire Line
+	8700 1600 8700 1900
+Wire Wire Line
+	8700 1300 8700 1400
+Connection ~ 8700 1300
+$Comp
+L Device:D_Schottky D20
+U 1 1 60547D86
+P 8700 1450
+F 0 "D20" V 8746 1370 50  0000 R CNN
+F 1 "D_Schottky_30V" V 8655 1370 50  0000 R CNN
+F 2 "Trinket M0 rev D:SOD-123FL" H 8700 1450 50  0001 C CNN
+F 3 "~" H 8700 1450 50  0001 C CNN
+	1    8700 1450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8700 1150 8700 1300
+Connection ~ 9000 1900
+Wire Wire Line
+	9300 2300 9300 2450
+Wire Wire Line
+	9000 2000 9000 1900
+$Comp
+L Regulator_Linear:AP2112K-3.3 U3
+U 1 1 607F4440
+P 9300 2000
+F 0 "U3" H 9300 2342 50  0000 C CNN
+F 1 "AP2112K-3.3" H 9300 2251 50  0000 C CNN
+F 2 "Trinket M0 rev D:SOT23-5" H 9300 2325 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/AP2112.pdf" H 9300 2100 50  0001 C CNN
+	1    9300 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 607E29FF
+P 9300 2450
+F 0 "#PWR04" H 9300 2200 50  0001 C CNN
+F 1 "GND" H 9305 2277 50  0000 C CNN
+F 2 "" H 9300 2450 50  0001 C CNN
+F 3 "" H 9300 2450 50  0001 C CNN
+	1    9300 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 60A586DF
+P 1650 1250
+F 0 "#PWR08" H 1650 1000 50  0001 C CNN
+F 1 "GND" H 1655 1077 50  0000 C CNN
+F 2 "" H 1650 1250 50  0001 C CNN
+F 3 "" H 1650 1250 50  0001 C CNN
+	1    1650 1250
+	1    0    0    -1  
+$EndComp
+Connection ~ 6950 2000
+Wire Wire Line
+	6950 2000 6950 3650
+Connection ~ 6000 3000
+Wire Wire Line
+	6000 3000 6000 3650
+Connection ~ 5050 3000
+Wire Wire Line
+	5050 3000 5050 3650
+Connection ~ 4100 3000
+Wire Wire Line
+	4100 3000 4100 3650
+Connection ~ 3150 3000
+Wire Wire Line
+	3150 3000 3150 3650
+Connection ~ 2200 3000
+Wire Wire Line
+	2200 3000 2200 3650
+Connection ~ 1250 2000
+Wire Wire Line
+	1250 2000 1250 3650
+Text GLabel 6950 3650 3    50   Input ~ 0
+PA09
+Text GLabel 6000 3650 3    50   Input ~ 0
+PA08
+Text GLabel 5050 3650 3    50   Input ~ 0
+PA07
+Text GLabel 4100 3650 3    50   Input ~ 0
+PA06
+Text GLabel 3150 3650 3    50   Input ~ 0
+PA05
+Text GLabel 2200 3650 3    50   Input ~ 0
+PA04
+Text GLabel 1250 3650 3    50   Input ~ 0
+PA03
+$Comp
+L Switch:SW_GATERON_LED SW2
+U 1 1 604417FE
+P 2800 1100
+F 0 "SW2" H 2800 1435 50  0000 C CNN
+F 1 "SW_SPST_LED" H 2800 1344 50  0000 C CNN
+F 2 "Trinket M0 rev D:CHERRYMX-NN-LED" H 2800 1400 50  0001 C CNN
+F 3 "~" H 2800 1400 50  0001 C CNN
+	1    2800 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 1000 6950 2000
+Connection ~ 6000 2000
+Wire Wire Line
+	6000 2000 6000 3000
+Wire Wire Line
+	6000 1000 6000 2000
+Connection ~ 5050 2000
+Wire Wire Line
+	5050 2000 5050 3000
+Wire Wire Line
+	5050 1000 5050 2000
+Connection ~ 4100 2000
+Wire Wire Line
+	4100 2000 4100 3000
+Wire Wire Line
+	4100 1000 4100 2000
+Connection ~ 3150 2000
+Wire Wire Line
+	3150 2000 3150 3000
+Wire Wire Line
+	3150 1000 3150 2000
+Connection ~ 2200 2000
+Wire Wire Line
+	2200 2000 2200 3000
+Wire Wire Line
+	2200 1000 2200 2000
+Wire Wire Line
+	1250 1000 1250 2000
+Wire Wire Line
+	2600 3000 2500 3000
+Wire Wire Line
+	3550 3000 3450 3000
+Wire Wire Line
+	4500 3000 4400 3000
+Wire Wire Line
+	5450 3000 5350 3000
+Wire Wire Line
+	6400 3000 6300 3000
+$Comp
+L Diode:1N4148 D19
+U 1 1 6060B784
+P 6150 3000
+F 0 "D19" H 6150 3217 50  0000 C CNN
+F 1 "1N4148" H 6150 3126 50  0000 C CNN
+F 2 "digikey-footprints:SOD-123" H 6150 2825 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 6150 3000 50  0001 C CNN
+	1    6150 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D18
+U 1 1 6060A976
+P 5200 3000
+F 0 "D18" H 5200 3217 50  0000 C CNN
+F 1 "1N4148" H 5200 3126 50  0000 C CNN
+F 2 "digikey-footprints:SOD-123" H 5200 2825 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 5200 3000 50  0001 C CNN
+	1    5200 3000
+	1    0    0    -1  
+$EndComp
+Connection ~ 5000 3350
+Wire Wire Line
+	5000 3350 5950 3350
+$Comp
+L Diode:1N4148 D17
+U 1 1 606028AC
+P 4250 3000
+F 0 "D17" H 4250 3217 50  0000 C CNN
+F 1 "1N4148" H 4250 3126 50  0000 C CNN
+F 2 "digikey-footprints:SOD-123" H 4250 2825 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 4250 3000 50  0001 C CNN
+	1    4250 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D16
+U 1 1 60601BC6
+P 3300 3000
+F 0 "D16" H 3300 3217 50  0000 C CNN
+F 1 "1N4148" H 3300 3126 50  0000 C CNN
+F 2 "digikey-footprints:SOD-123" H 3300 2825 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 3300 3000 50  0001 C CNN
+	1    3300 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D15
+U 1 1 606009CA
+P 2350 3000
+F 0 "D15" H 2350 3217 50  0000 C CNN
+F 1 "1N4148" H 2350 3126 50  0000 C CNN
+F 2 "digikey-footprints:SOD-123" H 2350 2825 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 2350 3000 50  0001 C CNN
+	1    2350 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 2000 7250 2000
+Wire Wire Line
+	6400 2000 6300 2000
+Wire Wire Line
+	5450 2000 5350 2000
+Wire Wire Line
+	4500 2000 4400 2000
+Wire Wire Line
+	3550 2000 3450 2000
+Wire Wire Line
+	2600 2000 2500 2000
+Wire Wire Line
+	1650 2000 1550 2000
+Wire Wire Line
+	2600 1000 2500 1000
+Wire Wire Line
+	3550 1000 3450 1000
+Wire Wire Line
+	4500 1000 4400 1000
+Wire Wire Line
+	5450 1000 5350 1000
+Wire Wire Line
+	6400 1000 6300 1000
+Wire Wire Line
+	7350 1000 7250 1000
+$Comp
+L Diode:1N4148 D14
+U 1 1 605D1D0F
+P 7100 2000
+F 0 "D14" H 7100 2217 50  0000 C CNN
+F 1 "1N4148" H 7100 2126 50  0000 C CNN
+F 2 "digikey-footprints:SOD-123" H 7100 1825 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 7100 2000 50  0001 C CNN
+	1    7100 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D13
+U 1 1 605D110F
+P 6150 2000
+F 0 "D13" H 6150 2217 50  0000 C CNN
+F 1 "1N4148" H 6150 2126 50  0000 C CNN
+F 2 "digikey-footprints:SOD-123" H 6150 1825 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 6150 2000 50  0001 C CNN
+	1    6150 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D12
+U 1 1 605D0276
+P 5200 2000
+F 0 "D12" H 5200 2217 50  0000 C CNN
+F 1 "1N4148" H 5200 2126 50  0000 C CNN
+F 2 "digikey-footprints:SOD-123" H 5200 1825 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 5200 2000 50  0001 C CNN
+	1    5200 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D11
+U 1 1 605CF4F1
+P 4250 2000
+F 0 "D11" H 4250 2217 50  0000 C CNN
+F 1 "1N4148" H 4250 2126 50  0000 C CNN
+F 2 "digikey-footprints:SOD-123" H 4250 1825 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 4250 2000 50  0001 C CNN
+	1    4250 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D10
+U 1 1 605CE83B
+P 3300 2000
+F 0 "D10" H 3300 2217 50  0000 C CNN
+F 1 "1N4148" H 3300 2126 50  0000 C CNN
+F 2 "digikey-footprints:SOD-123" H 3300 1825 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 3300 2000 50  0001 C CNN
+	1    3300 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D9
+U 1 1 605CD854
+P 2350 2000
+F 0 "D9" H 2350 2217 50  0000 C CNN
+F 1 "1N4148" H 2350 2126 50  0000 C CNN
+F 2 "digikey-footprints:SOD-123" H 2350 1825 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 2350 2000 50  0001 C CNN
+	1    2350 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D8
+U 1 1 605CC427
+P 1400 2000
+F 0 "D8" H 1400 2217 50  0000 C CNN
+F 1 "1N4148" H 1400 2126 50  0000 C CNN
+F 2 "digikey-footprints:SOD-123" H 1400 1825 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 1400 2000 50  0001 C CNN
+	1    1400 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D7
+U 1 1 605BE803
+P 7100 1000
+F 0 "D7" H 7100 1217 50  0000 C CNN
+F 1 "1N4148" H 7100 1126 50  0000 C CNN
+F 2 "digikey-footprints:SOD-123" H 7100 825 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 7100 1000 50  0001 C CNN
+	1    7100 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D6
+U 1 1 605BD924
+P 6150 1000
+F 0 "D6" H 6150 1217 50  0000 C CNN
+F 1 "1N4148" H 6150 1126 50  0000 C CNN
+F 2 "digikey-footprints:SOD-123" H 6150 825 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 6150 1000 50  0001 C CNN
+	1    6150 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D5
+U 1 1 605BCC17
+P 5200 1000
+F 0 "D5" H 5200 1217 50  0000 C CNN
+F 1 "1N4148" H 5200 1126 50  0000 C CNN
+F 2 "digikey-footprints:SOD-123" H 5200 825 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 5200 1000 50  0001 C CNN
+	1    5200 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D4
+U 1 1 605B9E7D
+P 4250 1000
+F 0 "D4" H 4250 1217 50  0000 C CNN
+F 1 "1N4148" H 4250 1126 50  0000 C CNN
+F 2 "digikey-footprints:SOD-123" H 4250 825 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 4250 1000 50  0001 C CNN
+	1    4250 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D3
+U 1 1 605B8FAF
+P 3300 1000
+F 0 "D3" H 3300 1217 50  0000 C CNN
+F 1 "1N4148" H 3300 1126 50  0000 C CNN
+F 2 "digikey-footprints:SOD-123" H 3300 825 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 3300 1000 50  0001 C CNN
+	1    3300 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D2
+U 1 1 605A772B
+P 2350 1000
+F 0 "D2" H 2350 1217 50  0000 C CNN
+F 1 "1N4148" H 2350 1126 50  0000 C CNN
+F 2 "digikey-footprints:SOD-123" H 2350 825 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 2350 1000 50  0001 C CNN
+	1    2350 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D1
+U 1 1 605AD3A0
+P 1400 1000
+F 0 "D1" H 1400 1217 50  0000 C CNN
+F 1 "1N4148" H 1400 1126 50  0000 C CNN
+F 2 "digikey-footprints:SOD-123" H 1400 825 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 1400 1000 50  0001 C CNN
+	1    1400 1000
+	1    0    0    -1  
+$EndComp
+Connection ~ 5950 3350
+Connection ~ 4050 3350
+Wire Wire Line
+	4050 3350 5000 3350
+Wire Wire Line
+	3100 3350 4050 3350
+Connection ~ 6900 2350
+Wire Wire Line
+	6900 2350 7850 2350
+Connection ~ 5950 2350
+Wire Wire Line
+	5950 2350 6900 2350
+Connection ~ 5000 2350
+Wire Wire Line
+	5000 2350 5950 2350
+Connection ~ 4050 2350
+Wire Wire Line
+	4050 2350 5000 2350
+Connection ~ 3100 2350
+Wire Wire Line
+	3100 2350 4050 2350
+Wire Wire Line
+	2150 2350 3100 2350
+Connection ~ 6900 1350
+Wire Wire Line
+	6900 1350 7850 1350
+Connection ~ 5950 1350
+Wire Wire Line
+	5950 1350 6900 1350
+Connection ~ 5000 1350
+Wire Wire Line
+	5000 1350 5950 1350
+Connection ~ 4050 1350
+Wire Wire Line
+	4050 1350 5000 1350
+Connection ~ 3100 1350
+Wire Wire Line
+	3100 1350 4050 1350
+Wire Wire Line
+	2150 1350 3100 1350
+Text Notes 7450 1700 0    50   ~ 0
+RSET
+Wire Wire Line
+	7850 2350 7850 2000
+Wire Wire Line
+	7850 2000 7750 2000
+$Comp
+L Switch:SW_GATERON_LED SW4
+U 1 1 6044EC49
+P 4700 1100
+F 0 "SW4" H 4700 1435 50  0000 C CNN
+F 1 "SW_SPST_LED" H 4700 1344 50  0000 C CNN
+F 2 "Trinket M0 rev D:CHERRYMX-NN-LED" H 4700 1400 50  0001 C CNN
+F 3 "~" H 4700 1400 50  0001 C CNN
+	1    4700 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_GATERON_LED SW5
+U 1 1 6044FA7B
+P 5650 1100
+F 0 "SW5" H 5650 1435 50  0000 C CNN
+F 1 "SW_SPST_LED" H 5650 1344 50  0000 C CNN
+F 2 "Trinket M0 rev D:CHERRYMX-NN-LED" H 5650 1400 50  0001 C CNN
+F 3 "~" H 5650 1400 50  0001 C CNN
+	1    5650 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_GATERON_LED SW6
+U 1 1 6045053E
+P 6600 1100
+F 0 "SW6" H 6600 1435 50  0000 C CNN
+F 1 "SW_SPST_LED" H 6600 1344 50  0000 C CNN
+F 2 "Trinket M0 rev D:CHERRYMX-NN-LED" H 6600 1400 50  0001 C CNN
+F 3 "~" H 6600 1400 50  0001 C CNN
+	1    6600 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_GATERON_LED SW7
+U 1 1 604511EC
+P 7550 1100
+F 0 "SW7" H 7550 1435 50  0000 C CNN
+F 1 "SW_SPST_LED" H 7550 1344 50  0000 C CNN
+F 2 "Trinket M0 rev D:CHERRYMX-NN-LED" H 7550 1400 50  0001 C CNN
+F 3 "~" H 7550 1400 50  0001 C CNN
+	1    7550 1100
+	1    0    0    -1  
+$EndComp
+Text Notes 2750 700  0    50   ~ 0
++
+Text Notes 3700 700  0    50   ~ 0
+7
+Text Notes 4650 700  0    50   ~ 0
+8
+Text Notes 5600 700  0    50   ~ 0
+9
+Text Notes 6500 700  0    50   ~ 0
+CLR
+Text Notes 7450 700  0    50   ~ 0
+ENTR
+Wire Wire Line
+	2050 1000 2150 1000
+Wire Wire Line
+	2150 1000 2150 1350
+Wire Wire Line
+	3100 1350 3100 1000
+Wire Wire Line
+	3100 1000 3000 1000
+Wire Wire Line
+	4050 1350 4050 1000
+Wire Wire Line
+	4050 1000 3950 1000
+Wire Wire Line
+	5000 1350 5000 1000
+Wire Wire Line
+	5000 1000 4900 1000
+Wire Wire Line
+	5950 1350 5950 1000
+Wire Wire Line
+	5950 1000 5850 1000
+Wire Wire Line
+	6900 1350 6900 1000
+Wire Wire Line
+	6900 1000 6800 1000
+Wire Wire Line
+	7850 1350 7850 1000
+Wire Wire Line
+	7850 1000 7750 1000
+Wire Wire Line
+	6900 3000 6800 3000
+Wire Wire Line
+	6900 3350 6900 3000
+Wire Wire Line
+	5950 3000 5850 3000
+Wire Wire Line
+	5950 3350 5950 3000
+Wire Wire Line
+	5000 3000 4900 3000
+Wire Wire Line
+	5000 3350 5000 3000
+Wire Wire Line
+	4050 3000 3950 3000
+Wire Wire Line
+	4050 3350 4050 3000
+Wire Wire Line
+	3100 3000 3000 3000
+Wire Wire Line
+	3100 3350 3100 3000
+Wire Wire Line
+	6900 2000 6800 2000
+Wire Wire Line
+	6900 2350 6900 2000
+Wire Wire Line
+	5950 2000 5850 2000
+Wire Wire Line
+	5950 2350 5950 2000
+Wire Wire Line
+	5000 2000 4900 2000
+Wire Wire Line
+	5000 2350 5000 2000
+Wire Wire Line
+	4050 2000 3950 2000
+Wire Wire Line
+	4050 2350 4050 2000
+Wire Wire Line
+	3100 2000 3000 2000
+Wire Wire Line
+	3100 2350 3100 2000
+Wire Wire Line
+	2150 2000 2050 2000
+Wire Wire Line
+	2150 2350 2150 2000
+Text Notes 6500 2700 0    50   ~ 0
+KEY\nREL
+Text Notes 5600 2700 0    50   ~ 0
+3
+Text Notes 4650 2700 0    50   ~ 0
+2
+Text Notes 3700 2700 0    50   ~ 0
+1
+Text Notes 2750 2700 0    50   ~ 0
+0
+Text Notes 6500 1700 0    50   ~ 0
+PRO
+Text Notes 5650 1700 0    50   ~ 0
+6
+Text Notes 4650 1700 0    50   ~ 0
+5
+Text Notes 3700 1700 0    50   ~ 0
+4
+Text Notes 2750 1700 0    50   ~ 0
+-
+Text Notes 1750 1700 0    50   ~ 0
+NOUN
+Text Notes 1750 700  0    50   ~ 0
+VERB
+$Comp
+L Switch:SW_GATERON_LED SW19
+U 1 1 6045C19B
+P 6600 3100
+F 0 "SW19" H 6600 3435 50  0000 C CNN
+F 1 "SW_SPST_LED" H 6600 3344 50  0000 C CNN
+F 2 "Trinket M0 rev D:CHERRYMX-NN-LED" H 6600 3400 50  0001 C CNN
+F 3 "~" H 6600 3400 50  0001 C CNN
+	1    6600 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_GATERON_LED SW18
+U 1 1 6045B649
+P 5650 3100
+F 0 "SW18" H 5650 3435 50  0000 C CNN
+F 1 "SW_SPST_LED" H 5650 3344 50  0000 C CNN
+F 2 "Trinket M0 rev D:CHERRYMX-NN-LED" H 5650 3400 50  0001 C CNN
+F 3 "~" H 5650 3400 50  0001 C CNN
+	1    5650 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_GATERON_LED SW17
+U 1 1 6045AA86
+P 4700 3100
+F 0 "SW17" H 4700 3435 50  0000 C CNN
+F 1 "SW_SPST_LED" H 4700 3344 50  0000 C CNN
+F 2 "Trinket M0 rev D:CHERRYMX-NN-LED" H 4700 3400 50  0001 C CNN
+F 3 "~" H 4700 3400 50  0001 C CNN
+	1    4700 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_GATERON_LED SW16
+U 1 1 6045857F
+P 3750 3100
+F 0 "SW16" H 3750 3435 50  0000 C CNN
+F 1 "SW_SPST_LED" H 3750 3344 50  0000 C CNN
+F 2 "Trinket M0 rev D:CHERRYMX-NN-LED" H 3750 3400 50  0001 C CNN
+F 3 "~" H 3750 3400 50  0001 C CNN
+	1    3750 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_GATERON_LED SW15
+U 1 1 604576AC
+P 2800 3100
+F 0 "SW15" H 2800 3435 50  0000 C CNN
+F 1 "SW_SPST_LED" H 2800 3344 50  0000 C CNN
+F 2 "Trinket M0 rev D:CHERRYMX-NN-LED" H 2800 3400 50  0001 C CNN
+F 3 "~" H 2800 3400 50  0001 C CNN
+	1    2800 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_GATERON_LED SW13
+U 1 1 60455F49
+P 6600 2100
+F 0 "SW13" H 6600 2435 50  0000 C CNN
+F 1 "SW_SPST_LED" H 6600 2344 50  0000 C CNN
+F 2 "Trinket M0 rev D:CHERRYMX-NN-LED" H 6600 2400 50  0001 C CNN
+F 3 "~" H 6600 2400 50  0001 C CNN
+	1    6600 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_GATERON_LED SW12
+U 1 1 604555F4
+P 5650 2100
+F 0 "SW12" H 5650 2435 50  0000 C CNN
+F 1 "SW_SPST_LED" H 5650 2344 50  0000 C CNN
+F 2 "Trinket M0 rev D:CHERRYMX-NN-LED" H 5650 2400 50  0001 C CNN
+F 3 "~" H 5650 2400 50  0001 C CNN
+	1    5650 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_GATERON_LED SW11
+U 1 1 60454943
+P 4700 2100
+F 0 "SW11" H 4700 2435 50  0000 C CNN
+F 1 "SW_SPST_LED" H 4700 2344 50  0000 C CNN
+F 2 "Trinket M0 rev D:CHERRYMX-NN-LED" H 4700 2400 50  0001 C CNN
+F 3 "~" H 4700 2400 50  0001 C CNN
+	1    4700 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_GATERON_LED SW9
+U 1 1 60453591
+P 2800 2100
+F 0 "SW9" H 2800 2435 50  0000 C CNN
+F 1 "SW_SPST_LED" H 2800 2344 50  0000 C CNN
+F 2 "Trinket M0 rev D:CHERRYMX-NN-LED" H 2800 2400 50  0001 C CNN
+F 3 "~" H 2800 2400 50  0001 C CNN
+	1    2800 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_GATERON_LED SW8
+U 1 1 604526BB
+P 1850 2100
+F 0 "SW8" H 1850 2435 50  0000 C CNN
+F 1 "SW_SPST_LED" H 1850 2344 50  0000 C CNN
+F 2 "Trinket M0 rev D:CHERRYMX-NN-LED" H 1850 2400 50  0001 C CNN
+F 3 "~" H 1850 2400 50  0001 C CNN
+	1    1850 2100
+	1    0    0    -1  
+$EndComp
+Connection ~ 3100 3350
+Wire Wire Line
+	3100 3350 950  3350
+Connection ~ 2150 2350
+Wire Wire Line
+	2150 2350 950  2350
+Connection ~ 2150 1350
+Wire Wire Line
+	2150 1350 950  1350
+Text GLabel 950  3350 0    50   Input ~ 0
+PA02
+Text GLabel 950  2350 0    50   Input ~ 0
+PA01
+Text GLabel 950  1350 0    50   Input ~ 0
+PA00
+$Comp
+L Trinket_M0_rev_D-eagle-import:AQY232SZ U2
+U 1 1 60A75FB5
+P 5950 4700
+F 0 "U2" H 5950 5025 50  0000 C CNN
+F 1 "AQY232SZ" H 5950 4934 50  0000 C CNN
+F 2 "Package_SO:SO-4_4.4x4.3mm_P2.54mm" H 5750 4500 50  0001 L CIN
+F 3 "" H 5900 4700 50  0001 L CNN
+	1    5950 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 4600 5500 4600
+Wire Wire Line
+	5500 4600 5500 6200
+Wire Wire Line
+	5300 6200 5500 6200
+Connection ~ 8800 1900
+Wire Wire Line
+	9000 1900 8800 1900
+Wire Wire Line
+	8800 1900 8700 1900
+$Comp
+L Trinket_M0_rev_D-eagle-import:CAP_CERAMIC0805-NOOUTLINE C1
+U 1 1 605CBED8
+P 8800 2250
+F 0 "C1" H 8878 2346 50  0000 L CNN
+F 1 "10uF" H 8878 2255 50  0000 L CNN
+F 2 "Trinket M0 rev D:0805-NO" H 8800 2250 50  0001 C CNN
+F 3 "" H 8800 2250 50  0001 C CNN
+	1    8800 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 1900 8800 2050
+$Comp
+L power:GND #PWR03
+U 1 1 605D2194
+P 8800 2450
+F 0 "#PWR03" H 8800 2200 50  0001 C CNN
+F 1 "GND" H 8805 2277 50  0000 C CNN
+F 2 "" H 8800 2450 50  0001 C CNN
+F 3 "" H 8800 2450 50  0001 C CNN
+	1    8800 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 2350 8800 2450
+Wire Wire Line
+	6250 4600 6800 4600
+$Comp
+L Switch:SW_GATERON_LED SW10
+U 1 1 60454031
+P 3750 2100
+F 0 "SW10" H 3750 2435 50  0000 C CNN
+F 1 "SW_SPST_LED" H 3750 2344 50  0000 C CNN
+F 2 "Trinket M0 rev D:CHERRYMX-NN-LED" H 3750 2400 50  0001 C CNN
+F 3 "~" H 3750 2400 50  0001 C CNN
+	1    3750 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 1000 1550 1000
+Wire Wire Line
+	5950 3350 6900 3350
+Wire Wire Line
+	2600 3100 2150 3100
+$Comp
+L Switch:SW_GATERON_LED SW1
+U 1 1 60451EA5
+P 1850 1100
+F 0 "SW1" H 1850 1435 50  0000 C CNN
+F 1 "SW_SPST_LED" H 1850 1344 50  0000 C CNN
+F 2 "Trinket M0 rev D:CHERRYMX-NN-LED" H 1850 1400 50  0001 C CNN
+F 3 "~" H 1850 1400 50  0001 C CNN
+	1    1850 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_GATERON_LED SW3
+U 1 1 6044DAF1
+P 3750 1100
+F 0 "SW3" H 3750 1435 50  0000 C CNN
+F 1 "SW_SPST_LED" H 3750 1344 50  0000 C CNN
+F 2 "Trinket M0 rev D:CHERRYMX-NN-LED" H 3750 1400 50  0001 C CNN
+F 3 "~" H 3750 1400 50  0001 C CNN
+	1    3750 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 1100 6800 1100
+Wire Wire Line
+	6400 1100 5850 1100
+Wire Wire Line
+	5450 1100 4900 1100
+Wire Wire Line
+	4500 1100 3950 1100
+Wire Wire Line
+	3550 1100 3000 1100
+Wire Wire Line
+	2600 1100 2050 1100
+Wire Wire Line
+	6400 2100 5850 2100
+Wire Wire Line
+	5450 2100 4900 2100
+Wire Wire Line
+	4500 2100 3950 2100
+Wire Wire Line
+	3550 2100 3000 2100
+Wire Wire Line
+	2600 2100 2050 2100
+Wire Wire Line
+	6800 3100 6800 4600
+Wire Wire Line
+	6400 3100 5850 3100
+Wire Wire Line
+	5450 3100 4900 3100
+Wire Wire Line
+	4500 3100 3950 3100
+Wire Wire Line
+	3550 3100 3000 3100
+Wire Wire Line
+	7750 1400 7750 1100
+$Comp
+L Switch:SW_GATERON_LED SW14
+U 1 1 604567D3
+P 7550 2100
+F 0 "SW14" H 7550 2435 50  0000 C CNN
+F 1 "SW_SPST_LED" H 7550 2344 50  0000 C CNN
+F 2 "Trinket M0 rev D:CHERRYMX-NN-LED" H 7550 2400 50  0001 C CNN
+F 3 "~" H 7550 2400 50  0001 C CNN
+	1    7550 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 2100 6800 2100
+Wire Wire Line
+	1150 1400 1150 2100
+Wire Wire Line
+	1150 2100 1650 2100
+Wire Wire Line
+	7750 2100 7750 2400
+Wire Wire Line
+	7750 2400 2150 2400
+Wire Wire Line
+	2150 2400 2150 3100
+$Comp
+L Trinket_M0_rev_D-eagle-import:MOUNTINGHOLE3.0 J2
+U 1 1 605DB390
+P 8000 3100
+F 0 "J2" H 8050 3150 50  0001 C CNN
+F 1 "MOUNTINGHOLE3.0" H 8000 3100 50  0001 C CNN
+F 2 "" H 8000 3100 50  0001 C CNN
+F 3 "" H 8000 3100 50  0001 C CNN
+	1    8000 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Trinket_M0_rev_D-eagle-import:MOUNTINGHOLE3.0 J3
+U 1 1 605DC9A0
+P 8250 3100
+F 0 "J3" H 8300 3150 50  0001 C CNN
+F 1 "MOUNTINGHOLE3.0" H 8250 3100 50  0001 C CNN
+F 2 "" H 8250 3100 50  0001 C CNN
+F 3 "" H 8250 3100 50  0001 C CNN
+	1    8250 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Trinket_M0_rev_D-eagle-import:MOUNTINGHOLE3.0 J4
+U 1 1 605DD9DF
+P 8500 3100
+F 0 "J4" H 8550 3150 50  0001 C CNN
+F 1 "MOUNTINGHOLE3.0" H 8500 3100 50  0001 C CNN
+F 2 "" H 8500 3100 50  0001 C CNN
+F 3 "" H 8500 3100 50  0001 C CNN
+	1    8500 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Trinket_M0_rev_D-eagle-import:MOUNTINGHOLE3.0 J5
+U 1 1 605DE526
+P 8750 3100
+F 0 "J5" H 8800 3150 50  0001 C CNN
+F 1 "MOUNTINGHOLE3.0" H 8750 3100 50  0001 C CNN
+F 2 "" H 8750 3100 50  0001 C CNN
+F 3 "" H 8750 3100 50  0001 C CNN
+	1    8750 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 1250 1650 1100
+Wire Wire Line
+	1150 1400 7750 1400
+$EndSCHEMATC
