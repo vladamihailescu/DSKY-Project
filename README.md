@@ -31,7 +31,7 @@ My open source journey to building a functional, historically-accurate DSKY inte
 Raspberry Pi running VirtualAGC is driving the Nextion HMI, sending lamp instructions to the Alert board and reading keystrokes from Keyboard
 
 ## Task List
-###1.0
+- 1.0
 - [x] Build working GUI for HMI display
 - [x] Driver for Nextion HMI display
 - [x] Assemble alarm panel PCB
@@ -41,7 +41,7 @@ Raspberry Pi running VirtualAGC is driving the Nextion HMI, sending lamp instruc
 - [x] Update piDSKY2.py file
 - [x] Test with VirtualAGC
 
-###1.5
+- 1.5
 - [x] Design & assemble a custom PCB for keyboard
 - [ ] Improve code
 - [ ] Refine GUI to more closely match original DSKY display
