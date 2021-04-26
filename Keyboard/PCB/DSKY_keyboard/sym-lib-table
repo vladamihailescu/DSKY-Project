@@ -7,4 +7,5 @@
   (lib (name STM32F042K6T6)(type Legacy)(uri ${KIPRJMOD}/Libraries/STM32F042K6T6/STM32F042K6T6.lib)(options "")(descr ""))
   (lib (name dk_Diodes-Rectifiers-Single)(type Legacy)(uri ${KIPRJMOD}/Libraries/digikey-kicad-library-master/digikey-kicad-library-master/digikey-symbols/dk_Diodes-Rectifiers-Single.lib)(options "")(descr ""))
   (lib (name 614105150721)(type Legacy)(uri ${KIPRJMOD}/Libraries/614105150721.lib)(options "")(descr ""))
+  (lib (name STM32L082KZT6)(type Legacy)(uri ${KIPRJMOD}/Libraries/ul_STM32L082KZT6/2021-03-26_18-40-27.lib)(options "")(descr ""))
 )

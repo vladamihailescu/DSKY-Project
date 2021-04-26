@@ -6,4 +6,5 @@
   (lib (name Keyboard)(type KiCad)(uri ${KIPRJMOD}/Libraries/Keyboard.pretty-master/Keyboard.pretty-master)(options "")(descr ""))
   (lib (name my_parts)(type Eagle)(uri "${KIPRJMOD}/Libraries/MicroMechBoard-master/MicroMechBoard-master/hardware/EAGLE libraries")(options "")(descr "")(disabled))
   (lib (name anca)(type KiCad)(uri ${KIPRJMOD}/Libraries/anca)(options "")(descr ""))
+  (lib (name STM32L082KZT6)(type KiCad)(uri ${KIPRJMOD}/Libraries/ul_STM32L082KZT6/footprints.pretty)(options "")(descr ""))
 )

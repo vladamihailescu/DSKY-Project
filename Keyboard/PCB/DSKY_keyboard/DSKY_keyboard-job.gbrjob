@@ -7,7 +7,7 @@
       "Application": "Pcbnew",
       "Version":     "(5.1.9)-1"
     },
-    "CreationDate":  "2021-03-22T18:36:52-04:00"
+    "CreationDate":  "2021-03-29T17:32:38-04:00"
   },
   "GeneralSpecs":
   {
@@ -15,7 +15,7 @@
     {
       "Name": "DSKY_keyboard",
       "GUID": "44534b59-5f6b-4657-9962-6f6172642e6b",
-      "Revision": "1.0"
+      "Revision": "2.0"
     },
     "Size":
     {
