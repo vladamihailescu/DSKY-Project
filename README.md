@@ -1,14 +1,14 @@
 # DSKY-Project
 My open source journey to building a functional, historically-accurate DSKY interface that can be used in simulation. 
  
-## v1.0 Hardware (Current)
+## v1.0 Hardware (Completed)
  - Raspberry Pi 3B+ running VirtualAGC + driving the display & keyboard
  - Nextion 4.3" LCD HMI (NX4827T043_11) display
  - Alarm Panel PCB designed by Riley Rainey
  - Hand assembled keyboard using Cherry MX blue key switches & Arduino UNO in USB HID mode
  - 3D Printed shell components made from models created/modified by Riley Rainey/Manoel DaSilva from original MIT drawings or myself
 
-## v1.5 Hardware (Planned)
+## v1.5 Hardware (In Progress)
  - Raspberry Pi 3B+ running VirtualAGC + driving the display & keyboard
  - Nextion 4.3" LCD HMI (NX4827T043_11) display
  - Alarm Panel PCB designed by Riley Rainey
@@ -30,21 +30,22 @@ My open source journey to building a functional, historically-accurate DSKY inte
 ## Setup
 Raspberry Pi running VirtualAGC is driving the Nextion HMI, sending lamp instructions to the Alert board and reading keystrokes from Keyboard
 
-## v1.0 Task List
+## Task List
+1.0
 - [x] Build working GUI for HMI display
 - [x] Driver for Nextion HMI display
 - [x] Assemble alarm panel PCB
 - [x] Driver for alarm panel
 - [x] Assemble keyboard
-- [x] Driver for keyboard (Arduino UNO USB HID mode)
+- [x] Driver for keyboard
 - [x] Update piDSKY2.py file
-- [x] Assemble DSKY
-- [ ] Design & assemble a custom PCB for keyboard (In Progress)
-- [ ] Fix bugs in code
+- [x] Test with VirtualAGC
+1.5
+- [x] Design & assemble a custom PCB for keyboard
+- [ ] Improve code
 - [ ] Refine GUI to more closely match original DSKY display
-- [ ] Test with VirtualAGC + NASSP
 - [ ] Keyboard caps improvements
-- [ ] Improve overall DSKY fit & finish & pave way to v1.5
+- [ ] Improve overall DSKY fit & finish & pave way to v2.0
 
 ## References
  [VirtualAGC Project](https://www.ibiblio.org/apollo/) - I am so thankful that this exists because it has been my dream to build my own DSKY ever since I first learned of the
